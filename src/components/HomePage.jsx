@@ -4,15 +4,17 @@ import second from '../assets/img1.jpg'
 import second1 from '../assets/img2.jpg'
 import second2 from '../assets/img3.jpg'
 import { Carousel, Card } from 'flowbite-react';
+import Navbar from './Navbar'
+import { useNavigate } from 'react-router-dom'
 
 const HomePage = () => {
+  const navigate = useNavigate()
   function clickHandler() {
-    const element = document.getElementById('#login');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    navigate('/login')
   }
   return (
+    <>
+    <Navbar />
     <div className='px-5 sm:px-32'>
       <h1 className=' pt-8 font-semibold text-3xl'>New Arrival</h1>
       <div className='flex  py-4 gap-2 font-semibold'>
@@ -131,6 +133,7 @@ const HomePage = () => {
         </div>
       </div>
     </div>
+    </>
 
   )
 }
