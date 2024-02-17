@@ -1,0 +1,79 @@
+*{
+    list-style: none;
+}
+.lgin-sec {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .frm-txt1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(97 186 245);
+  }
+  
+  #pnonenumber {
+    margin-left: 10px;
+    width: 290px;
+  }
+  
+  #countries {
+    width: 150px;
+  }
+  
+  .frm-txt2 {
+    font-size: smaller;
+  }
+  
+  .login-img {
+    width: auto;
+    height: 500px;
+  }
+  
+  #bbtn {
+    background-color: rgb(97 186 245);
+  }
+  @media (max-width: 600px) { 
+    .lgin-sec {
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .frm-txt1 {
+      font-weight: bold;
+      font-size: 15px;
+      color: rgb(97 186 245);
+    }
+    .frm{
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+    }
+    #pnonenumber {
+      width: 200px;
+      margin-left: 0px;
+    }
+    
+    #countries {
+      display: none;
+    }
+    
+    .frm-txt2 {
+      font-size: 10px;
+      margin-top: 10px;
+    }
+    
+    .login-img {
+      width: 300px;
+      height: auto;
+    }
+    
+    #bbtn {
+      background-color: rgb(97 186 245);
+    }
+  }
